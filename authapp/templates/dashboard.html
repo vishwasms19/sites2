@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block title %} dashboard {% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+ <h1> hello welcome</h1>
+<h4>city : {{ request.session.city }}</h4>
+<h4>address: {{ request.session.address }}</h4>
+<h1><a href="/logout">logout</a></h1>
+{% endblock %}
